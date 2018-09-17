@@ -1,0 +1,85 @@
+#NAME : ARIYO EMMANUEL OLUDARE
+#ariyoemmanueloludare@gmail.com
+#07034778918
+#Surulere Chapter
+
+
+#Program to find the roots of Quadratic Equations and determine the nature of those roots
+print("Solving Quadratic Equations with the so called Almighty Formula")
+
+#Note: Please ensure that the quadratic equations you are running here are not just formulated from your head.
+
+#Input values for the variables
+print("This program solves Quadratic Questions and reports the nature of their roots")
+
+print("Enter the corresponding variables as required below")
+
+
+a = int(input("Enter value for variable a: "))
+b = int(input("Enter value for variable b: "))
+c = int(input("Enter value for variable c: "))
+
+D = (b ** 2 - (4 * a * c))
+
+
+k1 = (((0 - b) + (D**0.5)) / (2 * a)) * 1
+k2 = (((0 - b) - (D**0.5)) / (2 * a)) * 1
+
+
+k1 = round(k1,1)
+k2 = round(k2,1)
+
+x1 = (((0 - b) + (D**0.5)) / (2 * a))
+x2 = (((0 - b) - (D**0.5)) / (2 * a))
+
+num1 = x1
+num2 = x2
+
+num1 = round(num1.real,2)+round(num1.imag,2)*1j
+num2 = round(num2.real,2)+round(num2.imag,2)*1j
+
+
+if((b<0) and (a>0) and (a!=1) and (c>0)):
+    print("The answer to the question", a,"x^2 ", b,"x +",c,"= 0 is as below:")
+elif((b<0) and (a==1) and (c>0)):
+    print("The answer to the question x^2 ", b,"x +",c,"= 0 is as below:")
+    
+
+    
+elif((b>0) and (a>0) and (a!=1) and (c<0)):
+     print("The answer to the question", a,"x^2 +", b,"x ",c,"= 0 is as below:")
+elif((b>0) and (a==1) and (c<0)):
+     print("The answer to the question x^2 +", b,"x ",c,"= 0 is as below:")
+     
+
+     
+elif((b<0) and (a>0) and (a!=1) and (c<0)):
+     print("The answer to the question", a,"x^2 ", b,"x ",c,"= 0 is as below:")
+elif((b<0) and (a==1)  and (c<0)):
+     print("The answer to the question x^2 ", b,"x ",c,"= 0 is as below:")
+     
+     
+elif((b>0) and (a>0) and (a!=1) and (c>0)):
+    print("The answer to the question", a,"x^2 +", b,"x +", c, "= 0 is as below:")
+elif((b>0) and (a==1) and (c>0)):
+    print("The answer to the question x^2 +", b,"x +", c, "= 0 is as below:")
+     
+     
+if(D>0):
+    print("The roots of the equation are real and unequal")
+    print("And their values are x1 =",  k1,  " and  x2 =", k2)
+elif(D == 0):
+    print("The roots of the equation are real and equal")
+    print("x =", k1, "twice")
+else:
+    print("The roots of the equation are unqual and immaginary")    
+    print("And their values are x1 =",  num1,  " and  x2 =", num2)
+    
+print("Hope this made your work simpler.")
+print("Many thanks to CodeLagos!")
+
+
+
+    
+
+
